@@ -1,35 +1,7 @@
-
-div.marginsandpadding{ 
-        border: solid 1pt aqua;
-        margin: 10px;
-        float: left;
-        padding: 20% 10%;
-        background-repeat:space;
+html, body, div, span, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
     }
-    html{ 
-        background-color: black;
-        color: green;
-    }
-section.hero {
-    background: url("images/book.jpg");
-    height: 60vh;
-    -webkit-background-size: cover;
-    background-size: 58% ;
-    background-position: left center ;
-    background-repeat: no-repeat;
-    position: relative;
-    }
-body{background-image: url("images/LRoom.jpg") ;
-    float: left;}
-
-section.key-features {
-        background: url("images/LRoom.jpg");
-        height: 80vh;
-        -webkit-background-size: cover;
-        background-size: 60% ;
-        background-position: right center ;
-        background-repeat: no-repeat;
-        position: relative;
-        }
-    
-
