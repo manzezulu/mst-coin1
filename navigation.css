@@ -5,8 +5,9 @@ body {
 nav{
     border-color: aqua;
 }
-header{
-    display: flex;
+
+header nav{
+    display: inline-block;
 }
 
 .active {
@@ -60,10 +61,9 @@ divH{
     text-decoration: none;
 }
 img{
-    width: 100px;
-    background-color: rgb(156, 156, 156);
     
-}
+    width: 100px;
+   
 nav{
     list-style: none;
     display:flex;
