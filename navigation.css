@@ -5,11 +5,15 @@ body {
 nav{
     border-color: aqua;
 }
+.bg{
+    background-color: #1a1b1f;
+}
 header{
     margin-top: 0px;
     display: flex;
     margin-right: 0px;
-    background:rgb(36, 34, 34);
+    padding-top: 20px;
+   
     
 }
 
@@ -31,6 +35,7 @@ div1  {
  }
  div2{
     text-decoration: none;
+    
  }
 
 a{
@@ -39,7 +44,7 @@ a{
 }
 .button:hover {
     
-    background-color: #9a4bb3; /* Green */
+    background-color: #6a4e72; /* Green */
     border: none;
     color: white;
     
@@ -62,8 +67,8 @@ a{
     margin-left: 0;
     margin-right: 0;
     padding: 12px 20px;
-    font-size: 15px;
-    line-height: 10px;
+    font-size: 20px;
+    line-height: 1px;
     
 }
 

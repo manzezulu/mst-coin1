@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+    .body{   
+        background-image: url("images/19.jpg");
+        background-position-y: center;
+        background-size: cover;
+        margin: 0px;
+        
+    }
