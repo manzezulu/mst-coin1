@@ -5,48 +5,55 @@ body {
 nav{
     border-color: aqua;
 }
-
-header nav{
-    display: inline-block;
-}
-
-.active {
-    background-color: #04AA6D;
-    }
-div1  {
-   
-    padding:20px;
-
-    border-width: 0.2px;
-    margin: 1px;
-}
-div1 a{
-    background-color:;
-}
-divH{
-    margin: 6px;
-    padding:122;
+header{
+    margin-top: 0px;
+    display: flex;
+    margin-right: 0px;
+    background:rgb(36, 34, 34);
     
 }
-.main-menu-item.w--current {
-    color: #ff6311;
-    text-align: left;
-    margin-right: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.w-nav-link {
-    vertical-align: top;
-    color: #222;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    text-decoration: none;
+
+nav{
+    list-style: none;
     display: inline-block;
-    position: relative;
+    padding-bottom: 20px;
 }
-.main-menu-item {
+nav2{
+    padding-top: 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-block-end: 0;
+}
+div1  {
+     margin-right:100px ;
+     border-width: 0.2px;
+ }
+ div2{
+    text-decoration: none;
+ }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.button:hover {
+    
+    background-color: #9a4bb3; /* Green */
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    
+   
+  }
+  a:active {
+    background-color: #04AA6D;
+    }
+
+.main-menu-item  {
+    text-decoration: none;
     color: #1a1b1f;
     text-align: left;
     letter-spacing: .25px;
@@ -54,41 +61,10 @@ divH{
     border-right: 1px solid rgba(0, 0, 0, .05);
     margin-left: 0;
     margin-right: 0;
-    padding: 29px 20px;
-    font-family: Bebas Neue, sans-serif;
-    font-size: 25px;
-    line-height: 30px;
-    text-decoration: none;
-}
-img{
-    
-    width: 100px;
-   
-nav{
-    list-style: none;
-    display:flex;
+    padding: 12px 20px;
+    font-size: 15px;
+    line-height: 10px;
     
 }
 
-/*ul{
-    list-style:none;
-    padding: 0;
-    margin:0 ;
-}*/
 
-/*li{
-    display: inline;
-    padding:20px
-    ;
-}*/
-li a:hover ,div1 a:hover{
-    background-color: #862424;
-  }
-
-.li{ 
-    float: right;
-    padding-left: 2%;
-    margin-left: 4%
-    ;
-    
-}
