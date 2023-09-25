@@ -1,0 +1,85 @@
+
+<!--------------script---------------------------------> 
+*slider*/
+const carouselContainer = document.querySelector(".carousel-container");
+const carouselSlides = document.querySelectorAll(".carousel-slide");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function moveToNextSlide() {
+    currentIndex = (currentIndex + 1) % carouselSlides.length;
+    updateCarousel();
+}
+
+function moveToPrevSlide() {
+    currentIndex = (currentIndex - 1 + carouselSlides.length) % carouselSlides.length;
+    updateCarousel();
+}
+
+nextBtn.addEventListener("click", moveToNextSlide);
+prevBtn.addEventListener("click", moveToPrevSlide);
+
+// Automatically advance the carousel
+// setInterval(moveToNextSlide, 3000); // Uncomment this line to enable automatic sliding
+/*slider*/
+
+<!--------------script---------------------------------> 
+
+
+
+<section class="availability">
+   <div class="slider-container">
+<!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+  <!-- Slides -->
+  <div class="swiper-slide"><img src="images/another header.jpg" alt=""></div>
+  <div class="swiper-slide"><img src="images/another header.jpg" alt=""></div>
+  <div class="swiper-slide"><img src="images/another header.jpg" alt=""></div>
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div> 
+ </section>
+
+
+
+
+*slider*/
+.slider-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Increased max width */
+    width: 100%;
+    margin: auto;
+}
+.swiper{
+    width:80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper .swiper-button-prev {
+    color:#b54769;
+}
+.swiper .swiper-button-next{
+    color:#b54769;
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color:#b54769;
+}
+/*slider*/

@@ -16,7 +16,8 @@ body{
     
 }
 .sidebarspace{
-    padding: 19px 0px;
+    padding: 19px 20px;
+    text-decoration: none;
 
 }
 .column {
@@ -81,3 +82,4 @@ div.fixed {
     color: white;
     font-size: 12px;
   }
+  

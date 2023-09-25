@@ -1,0 +1,28 @@
+
+
+*slider*/
+.slider-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Increased max width */
+    width: 100%;
+    margin: auto;
+}
+.swiper{
+    width:80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper .swiper-button-prev {
+    color:#b54769;
+}
+.swiper .swiper-button-next{
+    color:#b54769;
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color:#b54769;
+}
+/*slider*/

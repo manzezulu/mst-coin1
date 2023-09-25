@@ -1,7 +1,19 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    }
+h1{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+p1 {
+    font-size: 30px;
+    font-optical-sizing:auto;
+    font-weight: 500;
+    
+}
+.getStartedButton:hover{
+    background-color: #8b7990; /* Green */
+    border: none;
+    color: rgb(237, 236, 228);
+    
+    text-align: center;
+    text-decoration: none;
+}
