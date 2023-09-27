@@ -1,0 +1,196 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to header, nav, and footer */
+header, nav, footer {
+    display: block;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/back1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center; /* Center align text */
+    color: #fff; /* Text color */
+}
+
+/* Logo Styles */
+.logo {
+    margin-top: 20px;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin: 0;
+}
+
+ul.topnav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    color: #f5ead2;
+    text-transform: uppercase;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: white;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 100px 0; /* Adjust padding for spacing */
+}
+
+.hero h1 {
+    font-size: 36px; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 40px;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0080ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Key Features Section Styles */
+.key-features {
+    background-color: #f5f5f5; /* Add background color */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.key-features h2 {
+    font-size: 28px; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+.key-features p {
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 40px;
+}
+
+.key-features ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.key-features li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Countdown Section Styles */
+.countdown {
+    background-color: #0080ff;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.countdown h2 {
+    font-size: 28px; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+.countdown-timer {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tables Section Styles */
+.tables {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tables table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tables th, .tables td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-socials {
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Copyright Styles */
+.copyrights {
+    margin-top: 20px;
+    font-size: 14px;
+}
