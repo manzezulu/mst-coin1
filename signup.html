@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MST signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/logo111.png" alt="MST logo" width="150px" height="150px"  ></a>
+            </div>
+            <nav>
+                <ul class="topnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="whitepaper.html">Whitepaper</a></li>
+                    <li><a href="msthow.html">How It works</a></li>
+                    <li><a href="getstarted.html">Get Started</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="login.html">Login</a></li>
+                    <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="signup">
+            <div class="signup-container">
+                <h2>Sign Up</h2>
+                <form action="signup.php" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+    
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log in here</a></p>
+            </div>
+        </section>
+    
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">MST Coin</a></div>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK<i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank">TWITTER<i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank">INSTAGRAM<i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank">LINKED IN<i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="copyrights">
+            <p><small>Copyright &copy; 2023 MST Coin</small></p>
+        </div>
+    </footer>
+</body>
+</html>
