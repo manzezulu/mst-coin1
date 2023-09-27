@@ -120,6 +120,12 @@ ul.topnav li a:hover {
     background-color: #0080ff;
     color: white;
 }
+/* Responsive Navigation */
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+}
 
 
 

@@ -37,7 +37,10 @@ p2{
     background-color: antiquewhite;
     background-blend-mode: overlay;
 }
-
+.stepStyle1 h2{
+    text-align: left;
+   
+}
 footer{
     position: static;
 }
@@ -47,4 +50,9 @@ footer{
 }
 .copyrights{    
     position: fixed;
+}
+
+/*video sttyles*/
+.videoAttach{
+    
 }
