@@ -9,16 +9,31 @@ body{
     vertical-align: baseline;
     }
 .body{   
-    background-image: url("images/19.jpg");
+    background-image: url("images/711133.jpg");
     background-position-y: center;
     background-size: cover;
     margin: 0px;
     
 }
+.body2{   
+  background-image: url("images/19-PhotoRoom.jpg");
+  background-position-y: center;
+  background-size: cover;
+  margin: 0px;
+  
+}
+
+#body{
+  position: fixed ;
+}
 .sidebarspace{
     padding: 19px 20px;
     text-decoration: none;
 
+}
+.hero-content{
+    text-align: center;
+    
 }
 .column {
     float: left;
@@ -27,6 +42,10 @@ body{
 /* Left and right column */
 .column.side {
     width: 15%;
+    margin-block-end: 70px;
+  }
+.column.side2 {
+    width: 30%;
     margin-block-end: 70px;
   }
 .column.side.right{
@@ -49,8 +68,8 @@ body{
 .column.bottom{
     width: 100%;
 }
-div.fixed {
-    position: fixed;
+div.fixed,footer.fixed {
+    position:absolute;
     bottom: 0;
     right: 0;
     width: 300px;

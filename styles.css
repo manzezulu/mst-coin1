@@ -9,6 +9,12 @@ p1 {
     font-weight: 500;
     
 }
+p2{
+    font-size: 22px;
+    font-optical-sizing:auto;
+    font-weight: 500;
+    
+}
 .getStartedButton:hover{
     background-color: #8b7990; /* Green */
     border: none;
@@ -16,4 +22,26 @@ p1 {
     
     text-align: center;
     text-decoration: none;
+}
+.step{
+    padding: 20px;
+    
+}
+
+.stepBG1{
+    background-color: antiquewhite;
+    background-blend-mode: overlay;
+}
+.stepBGM{
+    margin-top: 20px;
+    background-color: antiquewhite;
+    background-blend-mode: overlay;
+}
+
+footer{
+    position: static;
+}
+
+.columns{
+    columns: 2;
 }
