@@ -8,19 +8,26 @@ nav{
 .bg{
     background-color: #1a1b1f;
 }
+/*navigation bar header*/
 header{
     margin-top: 0px;
     display: flex;
     margin-right: 0px;
     padding-top: 20px;
-   
-    
+    justify-content: baseline;
+     
+}
+header {
+    position: sticky;
+    top: 0; 
+    border: solid;  
 }
 
 nav{
     list-style: none;
     display: inline-block;
     padding-bottom: 20px;
+    padding-top: 33px;
 }
 nav2{
     padding-top: 32px;
@@ -28,6 +35,11 @@ nav2{
     margin-right: 0px;
     padding-right: 0px;
     margin-block-end: 0;
+}
+/*topnavigation*/
+.topnav-right{
+    float: right;
+
 }
 div1  {
      margin-right:100px ;

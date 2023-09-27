@@ -9,7 +9,7 @@ body{
     vertical-align: baseline;
     }
 .body{   
-    background-image: url("images/711133.jpg");
+    background-image: url("images/19.jpg");
     background-position-y: center;
     background-size: cover;
     margin: 0px;
@@ -32,7 +32,9 @@ body{
 
 }
 .hero-content{
-    text-align: center;
+    text-align: left;
+    
+
     
 }
 .column {

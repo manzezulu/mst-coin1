@@ -45,3 +45,6 @@ footer{
 .columns{
     columns: 2;
 }
+.copyrights{    
+    position: fixed;
+}
