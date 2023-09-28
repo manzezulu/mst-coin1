@@ -56,3 +56,131 @@ footer{
 .videoAttach{
     
 }
+#signup {
+  align-items: center;
+}
+/* Style the Signup Form */
+
+.signup-container{
+  
+  max-width: 400px;
+  height:max-content;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+  
+  }
+  
+  .signup-container label {
+    display:block;
+    margin-bottom: 10px;
+   
+  }
+  
+  .signup-container input[type="text"],
+  .signup-container input[type="email"],
+  .signup-container input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .signup-container button[type="submit"] {
+    background-color: #0080ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signup-container button[type="submit"]:hover {
+    background-color: #0044cc;
+  }
+  
+  .signup-container p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signup-container a {
+    text-decoration: none;
+    color: #0080ff;
+  }
+  
+  .signup-container a:hover {
+    text-decoration: underline;
+  }
+  
+  
+/* Style the Login Container */
+.login-container {
+  max-width: 400px;
+  height:max-content;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the Login Form */
+.login-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 4px;
+  height: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-container button[type="submit"] {
+  background-color: #0080ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #0044cc;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-container a {
+  text-decoration: none;
+  color: #0080ff;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

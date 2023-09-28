@@ -23,6 +23,7 @@ body{
   
 }
 
+
 #body{
   position: fixed ;
 }
@@ -110,13 +111,15 @@ div.fixed,footer.fixed {
     color: white;
     font-size: 12px;
   }
+
+/*get started button*/
   .hero-content a {
     display: inline-block;
     padding: 15px 30px;
     background-color: #0080ff;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 100px;
     font-weight: bold;
     font-size: 20px;
 }
