@@ -1,40 +1,46 @@
-body { 
+body {
     background: rgba(212, 226, 223, 0.3)
-
 }
-nav{
+
+nav {
     border-color: aqua;
 }
-.bg{
-  background-color: black;
-    
+
+.bg {
+    background-color: black;
+
 }
 
 /*navigation bar header*/
-header{
+header {
     margin-right: 0px;
-  
     padding-top: 20px;
-    
-     
+    position: sticky;
+
+
 }
-header, nav, footer {
+
+header,
+nav,
+footer {
     display: block;
 }
+
 header {
-    position: sticky;
-    top: 0; 
+    top: 0;
     padding-bottom: 28px;
-     
+
 }
 
 
-nav{
+nav {
     list-style: none;
-  
-  margin-left: 190px;
-  margin-top: 45px;
-}/*
+
+    margin-left: 190px;
+    margin-top: 45px;
+}
+
+/*
 nav2{
     
     margin-left: 0px;
@@ -43,33 +49,37 @@ nav2{
     margin-block-end: 0;
 }*/
 
-/*topnavigation*/ 
+/*topnavigation*/
 
 
 
- div2{
+div2 {
     text-decoration: none;
-    
- }
 
-a{
+}
+
+a {
     color: white;
     text-decoration: none;
 }
+
 .button:hover {
-    
-    background-color: #6a4e72; /* Green */
+
+    background-color: #6a4e72;
+    /* Green */
     border: none;
     color: white;
-    
+
     text-align: center;
     text-decoration: none;
-    
-   
-  }
-  a:active {
+
+
+}
+
+a:active {
     background-color: #04AA6D;
-    }
+}
+
 /*navigation styles
 .main-menu-item  {
     display: inline-block;
@@ -89,7 +99,7 @@ a{
 }*/
 
 ul.topnav li a:hover {
-    
+
     color: white;
 }
 
@@ -113,19 +123,18 @@ ul.topnav li a {
     text-decoration: none;
     color: #f5ead2;
     text-transform: uppercase;
-    padding: 10px 20px; /* Adjust padding for better spacing */
+    padding: 10px 20px;
+    /* Adjust padding for better spacing */
 }
 
 ul.topnav li a:hover {
     background-color: #0080ff;
     color: white;
 }
+
 /* Responsive Navigation */
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
 }
-
-
-

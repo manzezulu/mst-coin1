@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MST Coin - Empowering Varsity Students with Cryptocurrendt</title>
+    <link rel = "icon" href = "images/logo111.png" type = "image/x-icon">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="styles.css">
+   <!--<link rel="stylesheet" href="styles.css">--> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-  
+
 </head>
-<body class="body" >
 
-    <header style="background-color: #1986c5;" >
-        
-                 <div1 class="column side"><a href="index.html"><img src="images/logo111.png" alt="MST logo" style="width: 80px" ></a></div1>
-        <nav>  
-               <ul class="topnav">
-                <li ><a href="index.html">Home</a></li>
-                <li ><a href="about.html">About Us</a></li>
-                <li ><a href="whitepaper.html">Whitepaper</a></li>
-                <li ><a href="msthow.html">How It works</a></li>
-                <li ><a href="getstarted.html">Get Started</a></li>
-                <li ><a href="community.html">Community</a></li>
-                <li ><a href="news.html">News</a></li>
-                <li ><a href="contact.html">Contact Us</a></li>
+<body class="body">
+
+    <header style="background-color: #1986c5;">
+
+        <div1 class="column side"><a href="index.html"><img src="images/logo111.png" alt="MST logo"
+                    style="width: 80px"></a></div1>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="whitepaper.html">Whitepaper</a></li>
+                <li><a href="msthow.html">How It works</a></li>
+                <li><a href="getstarted.html">Get Started</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li class="topnav-right"><a href="login.html">Login</a></li>
-                <li class="topnav-right" ><a href="signup.html">Sign Up</a></li>    
-               </ul>
-            </nav>
-    </header>
-  
-  
-    <main > 
-         <section >
-            <ul class="bg sidebarspace">
-            <li class=""><a href="index.html">Home Page</a></li>
-                <li ><a href="about.html">About Us</a></li>
-                <li ><a href="whitepaper.html">profile</a></li>
-                <li ><a href="msthow.html">wallet</a></li>
-                <li ><a href="getstarted.html">Get Started</a></li>
-                <li ><a href="community.html">Community</a></li>
-                <li ><a href="news.html">sign out</a></li>
-                <li ><a href="contact.html">Contact Us</a></li>
+                <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
             </ul>
-        </section>
+        </nav>
+    </header>
 
 
-        <section >
+    <main>
+      <!--<section>
+            <ul class="bg sidebarspace">
+                <li class=""><a href="index.html">Home Page</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="whitepaper.html">profile</a></li>
+                <li><a href="msthow.html">wallet</a></li>
+                <li><a href="getstarted.html">Get Started</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="news.html">sign out</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>-->  
+
+
+        <section>
             <div class="hero-content">
-                <h1  >Welcome to MST Coin</h1>
-                <p1>Empowering varsity students  with a revolutionary cryptocurrency.<br></p1>
-                <a href="signup.html" class="getStartedButton" style="font-size: 50px;text-shadow: 0 0 3px #FF0000;">Get Started</a>
+                <h1>Welcome to MST Coin</h1>
+                <p1>Empowering varsity students with a revolutionary cryptocurrency.<br></p1>
+                <a href="signup.html" class="getStartedButton">Get Started</a>
             </div>
             <div class="hero-image">
                 <img src="" alt="">
             </div>
         </section>
-      
 
-        <section   >
+        <section>
+            <div class="about-content">
+                <h1>About MST Coin</h1>
+                <p>MST Coin is a revolutionary cryptocurrency designed to empower Varsity students</p>
+            </div>
+
+        </section>
+
+
+
+        <section>
             <div class="key-featurs step">
                 <h2>Key Features</h2>
                 <p>Discover the unique benefits of MST Coins:</p>
@@ -73,70 +86,74 @@
             </div>
         </section>
 
-        <section class="table-div step">
+        <section>
             <div class="countdown-timer">
                 <h2>Token Sale Countdown</h2>
-                <div id="countdown-clock">
+                <p>Time remaining: <span id="countdown"></span></p>
                     <!--countclock with javascript-->
+                    <div class="launch-timer">
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        // Set the target date 30 days from now
+                        const targetDate = new Date();
+                        targetDate.setDate(targetDate.getDate() + 30);
+
+                        // Update the countdown timer every second
+                        const timer = setInterval(updateCountdown, 1000);
+
+                        function updateCountdown() {
+                            // Get the current date and time
+                            const currentDate = new Date();
+
+                            // Calculate the time difference between the current date and the target date
+                            const timeDifference = targetDate - currentDate;
+
+                            // Calculate days, hours, minutes, and seconds remaining
+                            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                            // 
+                            document.getElementById('days').innerText = days;
+                            document.getElementById('hours').innerText = hours;
+                            document.getElementById('minutes').innerText = minutes;
+                            document.getElementById('seconds').innerText = seconds;
+                            // Check if the target date has been reached
+                            if (timeDifference <= 0) {
+                                clearInterval(timer); // Stop the timer
+                                console.log("Countdown timer has expired!");
+                            }
+                        }
+
+                    </script>
                 </div>
-                <div>
-                    <table id="customers">
-                    <tr>
-                      <th>Username</th>
-                      <th>Contact</th>
-                      <th>status</th> 
-                      <th>Country</th>
-                      <th>Rank</th>
-                      <th>Bet</th>
-                    </tr>
-                    <tr>
-                      <td>Alfred Futter</td>
-                      <td>Afutter524@yahoo.com</td>
-                      <td>Active</td>
-                      <td>Germany</td>
-                      <td>Luna</td>
-                    </tr>
-                    <tr>
-                        <td>Senzo khoza</td>
-                        <td>SKhoza766@gmail.com</td>
-                        <td>Active</td>
-                        <td>Southa africa</td>
-                        <td>Alpha</td>
-                    </tr>
-                    <tr>
-                        <td>Senzo khoza</td>
-                        <td>SKhoza766@gmail.com</td>
-                        <td>Active</td>
-                        <td>Southa africa</td>
-                        <td>Alpha</td>
-                    </tr>
-                    <tr>
-                        <td>Senzo khoza</td>
-                        <td>SKhoza766@gmail.com</td>
-                        <td>Active</td>
-                        <td>Southa africa</td>
-                        <td>Alpha</td>
-                    </tr>
-                    <tr>
-                        <td>Senzo khoza</td>
-                        <td>SKhoza766@gmail.com</td>
-                        <td>Active</td>
-                        <td>Southa africa</td>
-                        <td>Alpha</td>
-                    </tr>
-        
-                  </table>
-                </div>
-             </div>
-             </section>
-     
+        </section>
+
 
     </main>
-    
+
 </body>
 <footer class="column bottom " style="display: flex; background-color: black;">
-    <div class = "footer-content" style="border: solid;">
-        <div1><a href="index.html"><img src="images/logo111.png" alt="MST logo" style="height: 60px;display:inline-flex;padding:0px;margin: 0px;" ></a></div1>
+    <div class="footer-content" style="border: solid;">
+        <div1><a href="index.html"><img src="images/logo111.png" alt="MST logo"
+                    style="height: 60px;display:inline-flex;padding:0px;margin: 0px;"></a></div1>
     </div>
     <div class="column middle" style="background-color: black;">
         <ul>
@@ -144,18 +161,19 @@
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Disclaimer</a></li>
         </ul>
-        </div>
-    
+    </div>
+
     <div class="column middles">
         <a href="https://www.facebook.com" target="_blank">FACEBOOK<i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com" target="_blank">TWITTER<i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com" target="_blank">INSTAGRAM<i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com" target="_blank">LINKED IN<i class="fab fa-linkedin-in"></i></a>
-        <div class="copyrights" >
+        <div class="copyrights">
             <p><small>Copyright &copy; 2023 MST Coin</small></p>
         </div>
 
     </div>
-   
+
 </footer>
+
 </html>
