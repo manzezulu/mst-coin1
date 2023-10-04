@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MST signup</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family:Verdana, Geneva, Tahoma, sans-serif;background-color: #E5D5FF;">
+<body>
+    <script src="mst.js"></script>
     <header>
-        <nav>
-            <div class="logo"><a href="index.html"><img src="images/logo111.png" alt="MST logo"></a></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="whitepaper.html">Whitepaper</a></li>
-                <li><a href="msthow.html">How It works</a></li>
-                <li><a href="getstarted.html">Get Started</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
-        </nav>
+        <div>
+            <a href="index.html"><img src="images/logo111.png" alt="MST logo"></a>
+            </div>
+            <nav>
+                <ul class="topnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="whitepaper.html">Whitepaper</a></li>
+                    <li><a href="msthow.html">How It works</a></li>
+                    <li><a href="getstarted.html">Get Started</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="login.html">Login</a></li>
+                    <li class="topnav-right"><a class="active" href="signup.html">Sign Up</a></li>
+                    <li class="topnav-left"><a href="#">&#9776;</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <section id="signup">
             <div class="signup-container">
                 <h2>Sign Up</h2>
-                <form action="signup.php" method="POST">
-                    <label for="username">Username:</label>
+                <form name="signup" action="signup.php" method="POST" onsubmit="return validateForm()">
+                    <label name="username">Username:</label>
                     <input type="text" id="username" name="username" required>
     
-                    <label for="email">Email:</label>
+                    <label name="email">Email:</label>
                     <input type="email" id="email" name="email" required>
     
-                    <label for="password">Password:</label>
+                    <label name="password">Password:</label>
                     <input type="password" id="password" name="password" required>
     
-                    <label for="confirm-password">Confirm Password:</label>
+                    <label name="confirm-password">Confirm Password:</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
     
                     <button type="submit">Sign Up</button>

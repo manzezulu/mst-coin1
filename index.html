@@ -4,41 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MST Coin - Empowering Varsity Students with Cryptocurrendt</title>
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body >
+    <script src="mst.js"></script>
     <header>
-        <div style="width: 250px;">
-            <a href="index.html"><img src="images/logo111.png" alt="MST logo"  ></a>
+        <div>
+            <a class="logo" href="index.html"><img src="images/logo111.png" alt="MST logo"></a>
             </div>
-
-        <nav>
-                <div1 class="main-menu-item"><a href="index.html">Home</a></div1>
-                <div1 class="main-menu-item"><a href="about.html">About Us</a></div1>
-                <div1 class="main-menu-item"><a href="whitepaper.html">Whitepaper</a></div1>
-                <div1 class="main-menu-item"><a href="msthow.html">How It works</a></div1>
-                <div1 class="main-menu-item"><a href="getstarted.html">Get Started</a></div1>
-                <div1 class="main-menu-item"><a href="community.html">Community</a></div1>
-                <div1 class="main-menu-item"><a href="news.html">News</a></div1>
-                <div1 class="main-menu-item"><a href="contact.html">Contact Us</a></div1>
-               
-                <div1 class="main-menu-item"><a href="login.html">Login</a></div1>
-                <div1 class="main-menu-item" ><a href="signup.html">Sign Up</a></div1>
-            
-            
-        
-        </nav>
+            <nav>
+                <ul class="topnav">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                        <div class="dropdown-content">
+                            <a href="about.html"> About Us</a>
+                            <a href="#" onclick="browserinfo()"> Browser info</a>
+                        </div>
+                    </li>
+                    <li><a href="whitepaper.html">Whitepaper</a>
+                        <div class="dropdown-content">
+                            <a href="#">Option 1</a>
+                            <a href="#">Option 2</a>
+                            <a href="#">Option 3</a>
+                        </div>
+                    </li>
+                    <li><a href="msthow.html">How It works</a></li>
+                    <li><a href="getstarted.html">Get Started</a></li>
+                    <li><a href="community.html">Community</a>
+                        <div class="dropdown-content">
+                            <a href="#">Option 1</a>
+                            <a href="#">Option 2</a>
+                            <a href="#">Option 3</a>
+                        </div>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="login.html">Login</a></li>
+                    <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
+                    <li class="topnav-left"><a href="#">&#9776;</a></li>
+                </ul>
+            </nav>
     </header>
-    <divH class="homeimage"><img src="images/LRoom.jpg" alt="header pic"></divH>
+  
     <main >
         <section class="hero" >
             <div class="hero-content">
                 <h1>Welcome to MST Coin</h1>
                 <p>Empowering varsity students  with a revolutionary cryptocurrency.</p>
-                <a href="#">Get Started</a>
+                <div id="getStarted">
+                    <a href="login.html">Get Started</a>
+                </div>
+                
             </div>
             <div class="hero-image">
                 <img src="" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>About The Auction</h2>
+                        <p>My Coin Auction is a fast growing online platform that enables you to participate in a virtual auction where you can bid and buy virtual coins called "My Coin", sale them and make a small fortune in either 5 days, 10 days or 20 days. </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Where</h3>
+                        <p>In the comfort of your home. <br>In the palm of your hands.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>When</h3>
+                        <p>Twice Everyday<br>08:30  AM and 18:30  PM</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -133,13 +175,14 @@
         </div>
     </div>
     <div class="footer-socials">
-        <a href="https://www.facebook.com" target="_blank">FACEBOOK<i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com" target="_blank">TWITTER<i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank">INSTAGRAM<i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com" target="_blank">LINKED IN<i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://twitter.com" target="_blank" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     </div>
     <div class="copyrights">
         <p><small>Copyright &copy; 2023 MST Coin</small></p>
+       
     </div>
 </footer>
-</html>
+</html> 
